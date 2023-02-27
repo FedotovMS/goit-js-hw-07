@@ -21,13 +21,13 @@ function createGaleryMarkup(galleryItems) {
     .join("");
 }
 
-// handle click on img
-
 const galleryContainer = document.querySelector("div.gallery");
 
 const imgMarkup = createGaleryMarkup(galleryItems);
 
 galleryContainer.insertAdjacentHTML("beforeend", imgMarkup);
+
+// handle click on img
 
 galleryContainer.addEventListener("click", onGalleryContainerClick);
 
